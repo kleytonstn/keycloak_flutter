@@ -51,9 +51,9 @@ class KeycloakService {
       _keycloakEvents
           .add(KeycloakEvent(type: KeycloakEventType.onAuthRefreshError));
     });
-    _keycloak.onAuthLogout = allowInterop(() {
-      _keycloakEvents.add(KeycloakEvent(type: KeycloakEventType.onAuthLogout));
-    });
+    // _keycloak.onAuthLogout = allowInterop(() {
+    //   _keycloakEvents.add(KeycloakEvent(type: KeycloakEventType.onAuthLogout));
+    // });
     _keycloak.onTokenExpired = allowInterop(() {
       _keycloakEvents
           .add(KeycloakEvent(type: KeycloakEventType.onTokenExpired));
