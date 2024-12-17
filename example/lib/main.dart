@@ -117,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               'Welcome ${_keycloakProfile?.username ?? 'Guest'}',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
             SizedBox(
               height: 20,
@@ -127,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: _login,
                 child: Text(
                   'Login',
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headlineMedium,
                 ),
               ),
             SizedBox(
@@ -145,7 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: Text(
                   'Refresh token',
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headlineMedium,
                 ),
               ),
           ],
