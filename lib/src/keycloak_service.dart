@@ -74,9 +74,18 @@ class KeycloakService {
     return _keycloak.authenticated;
   }
 
+  // TODO: remove await from functions
+
   Future<String> getToken([bool forceLogin = false]) async {
-    // await this.updateToken(10);
     return this._keycloak.token;
+  }
+
+  Future<String> getRefreshToken() async {
+    return this._keycloak.refreshToken;
+  }
+
+  Future<String> getIdToken() async {
+    return this._keycloak.idToken;
   }
 
   Future<void> logout([KeycloakLogoutOptions? options]) async {
